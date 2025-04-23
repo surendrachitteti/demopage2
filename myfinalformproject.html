@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Form</title>
+    </head>
+
+    <body>
+        <h1>Student Information Form</h1>
+        <!--personal Details-->
+        <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password"><br><br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob"><br><br>
+
+            <label for="bio">Short Bio:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself...."></textarea>
+        </fieldset>
+        <!--Gender-->
+        <fieldset>
+            <legend>Gender</legend>
+
+            <input type="radio" name="gender" value="male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" name="gender" value="female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" name="gender" value="other">
+            <label for="other">Other</label>
+        </fieldset>
+        <!--Interest-->
+        <fieldset>
+            <legend>Areas of Interest</legend>
+
+            <input type="checkbox" name="interests" vlaue="web">
+            <label for="web">Web Development</label><br>
+
+            <input type="checkbox" name="interests" value="ai">
+            <label for="ai">Artificial intelligence</label><br>
+
+            <input type="checkbox" name="interests" value="data">
+            <label for="data">Data Science</label><br>
+        </fieldset>
+        <!--Skill Level-->
+        <fieldset>
+            <legend>Programming Skill Level</legend>
+
+            <label for="skill">Rate your skill (0 to 10):</label><br>
+            <input type="range" id="skill" name="skill" min="0" max="10"><br>
+        </fieldset>
+        <!--File Upload-->
+        <fieldset>
+            <legend>Upload your Photo</legend>
+            <input type="file" name="photo">
+        </fieldset>
+        <!--Submit-->
+        <br>
+        <input type="submit" value="Submit Form">
+        </form>
+    </body>
+</html>
